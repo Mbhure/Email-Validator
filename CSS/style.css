@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins&family=Shippori+Antique&display=swap');
+
+* {
+    font-family: 'Acme', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Shippori Antique', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 12px 15px;
+
+}
+.logo img{
+    filter: invert(1);
+    width: 15px;
+   
+}
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+    font-size: 15px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul>li>a:hover {
+    color: aquamarine;
+}
+
+main {
+    min-height: 100vh;
+    padding: 10px;
+}
+.container{
+    /* background-color: rgb(203, 255, 255); */
+    max-width: 80vw;
+    margin: auto;
+    padding: 15px;
+}
+.container h1{
+    padding: 12px 0;
+}
+#resultCont div::first-letter{
+text-transform: uppercase;
+}
+.btn{
+    background: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid white;
+    border-radius: 8px;
+    text-align: center;
+    width: 70px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: rgb(51, 47, 47);
+    color: white;
+    
+    
+}
+footer {
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+#username{
+    min-width: 34vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+
+@media only screen and (max-width:600px){
+    body{
+        
+    }
+    .container{
+        font-size: 12px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 10px 0;
+        font-size: 12px;
+    }
+    .logo span{
+        font-size: 20px;
+    }
+    .logo img{
+        filter: invert(1);
+        width: 15px;
+}
+}
